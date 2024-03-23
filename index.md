@@ -70,13 +70,14 @@ In the following, we will present some samples generated using our proposed UniS
 
 ## Downstream Task: language-queried audio source separation
 Our trained UniSep can be fine-tuned using a smal amount of data to accomplish other tasks, e.g. language-queried audio source separation task. We show that UniSep can be fine-tuned on 50 hours text-audio pairs, then it can be used to separate audio based on text description. 
-We utilize T5 for encoding the text description. In the table below, the text description is composed of two audio descriptions that form the mixed audio. The red font highlights the target audio description we aim to extract from it.
+We utilize T5 for encoding the text description. In the table below, the text description is composed of two audio descriptions that form the mixed audio. 
+The red font highlights the target audio description we aim to extract from it.
+
 'Baseline' represents training from scratch and "fine-tuning" represents fine-tuning on our UniSep model.
 
 | <center> Mixture </center> | <center> Text description </center> | <center> baseline </center>| <center> fine-tuning</center>| <center> Target </center>|
 | -------------------------- | ------------------------- | ------------------------- | ------------------------------ | ----------------------------- | 
 | <img src="languaga-based_separation/mix/computer.png" width="300"> <br> <audio src="languaga-based_separation/mix/computer.wav" controls preload></audio>  | **<font color='red'>'Typing on a computer keyboard'</font>** + 'The rain pours, and a man talks' | <img src="languaga-based_separation/baseline/computer.png" width="300"> <br> <audio src="languaga-based_separation/baseline/computer.wav" controls preload></audio> | <img src="languaga-based_separation/our_finetune/computer.png" width="300"> <br> <audio src="languaga-based_separation/our_finetune/computer.wav" controls preload></audio>   |  <img src="languaga-based_separation/GT/computer.png" width="300"> <br> <audio src="languaga-based_separation/GT/computer.wav" controls preload></audio>|
-
 |<img src="languaga-based_separation/mix/bell.png" width="300"> <br>  <audio src="languaga-based_separation/mix/bell.wav" controls preload></audio>| **<font color='red'>'Several bells ringing'</font>** + 'A woman talks, followed by the laughter of a crowd in the background, followed by a woman talking' | <img src="languaga-based_separation/baseline/bell.png" width="300"> <br> <audio src="languaga-based_separation/baseline/bell.wav" controls preload></audio>  | <img src="languaga-based_separation/our_finetune/bell.png" width="300"> <br> <audio src="languaga-based_separation/our_finetune/bell.wav" controls preload></audio>|  <img src="languaga-based_separation/GT/bell.png" width="300"> <br>  <audio src="languaga-based_separation/GT/bell.wav" controls preload></audio>|
 
 
