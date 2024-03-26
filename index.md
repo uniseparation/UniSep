@@ -41,7 +41,7 @@ We should not only focus on the timbre, but also ensure the correctness of the s
 
 | <center> Mixture </center> | <center> Prompt </center> | <center> UniSep w pre </center>| <center> Target </center>|
 | -------------------------- | ------------------------- | ------------------------- |--------------------------- |
-| <audio src="ESC-50/mix/Spex_test_17.wav" controls preload></audio> | <audio src="ESC-50/prompt/Spex_test_17.wav" controls preload></audio> | <audio src="ESC-50/v4/Spex_test_17.wav" controls preload></audio> | <audio src="ESC-50/GT/Spex_test_17.wav" controls preload></audio> |
+| <audio src="ESC-50/mix/Spex_test_14.wav" controls preload></audio> | <audio src="ESC-50/prompt/Spex_test_14.wav" controls preload></audio> | <audio src="ESC-50/v4/Spex_test_14.wav" controls preload></audio> | <audio src="ESC-50/GT/Spex_test_14.wav" controls preload></audio> |
 | <audio src="ESC-50/mix/Spex_test_17.wav" controls preload></audio> | <audio src="ESC-50/prompt/Spex_test_17.wav" controls preload></audio> | <audio src="ESC-50/v4/Spex_test_17.wav" controls preload></audio> | <audio src="ESC-50/GT/Spex_test_17.wav" controls preload></audio> |
 | <audio src="ESC-50/mix/Spex_test_30.wav" controls preload></audio> | <audio src="ESC-50/prompt/Spex_test_30.wav" controls preload></audio> | <audio src="ESC-50/v4/Spex_test_30.wav" controls preload></audio> | <audio src="ESC-50/GT/Spex_test_30.wav" controls preload></audio> |
 | <audio src="ESC-50/mix/Spex_test_83.wav" controls preload></audio> | <audio src="ESC-50/prompt/Spex_test_83.wav" controls preload></audio> | <audio src="ESC-50/v4/Spex_test_83.wav" controls preload></audio> | <audio src="ESC-50/GT/Spex_test_83.wav" controls preload></audio> |
