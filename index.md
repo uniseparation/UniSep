@@ -62,16 +62,16 @@ We should not only focus on the timbre, but also ensure the correctness of the s
 
 
 ## Downstream Task: language-queried audio source separation
-Our trained UniSep can be fine-tuned using a smal amount of data to accomplish other tasks, e.g. language-queried audio source separation task. We show that UniSep can be fine-tuned on 50 hours text-audio pairs, then it can be used to separate audio based on text description. 
-We utilize T5 for encoding the text description. In the table below, the text description is composed of two audio descriptions that form the mixed audio. 
+Our trained UniSep can be fine-tuned using a small amount of data to accomplish other tasks, e.g. language-queried audio source separation task. We show that UniSep can be fine-tuned on text-audio pairs, and then it can be used to separate audio based on text description. 
+We utilize T5 to encode the text description. In the table below, the text description comprises two audio descriptions that form the mixed audio. 
 The red font highlights the target audio description we aim to extract from it.
 
 'Baseline' represents training from scratch and "fine-tuning" represents fine-tuning on our UniSep model.
-'AudioSep' is from the model of "Separate Anything You Describe". 
+'AudioSep' is from the "Separate Anything You Describe" model. 
 
 Please note that AudioSep is trained on a massive dataset of 14,000 hours of audio-text pairs, including AudioSet, VGGSound, AudioCaps, Clotho v2, and WavCaps. 
 In contrast, our UniSep is fine-tuned on a much smaller dataset of only around 16.7 hours from the AudioCaps dataset.
-Despite being fine-tuned on a considerably smaller dataset, UniSep is still able to achieve competitive results in audio separation tasks.
+Despite being fine-tuned on a considerably smaller dataset, UniSep can still achieve competitive results in audio separation tasks.
 This demonstrates UniSep's potential for fine-tuning on a smaller dataset to achieve competitive performance in audio separation tasks.
 
 | <center> Mixture </center> | <center> Text description </center> | <center> baseline </center>| <center> AudioSep </center>| <center> fine-tuning(ours)</center>| <center> Target </center>|
